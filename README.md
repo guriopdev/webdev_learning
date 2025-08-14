@@ -1,2 +1,1 @@
-# webdev_learning
-learning_repo_for_webdev
+Hello Odin
