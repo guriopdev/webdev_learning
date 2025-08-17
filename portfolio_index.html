@@ -1,55 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Custom Web Terminal</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <div id="terminal">
-    <div id="output"></div>
-    <div id="input-line">
-      <span class="prompt">&gt;</span>
-      <input type="text" id="command-input" autofocus autocomplete="off" />
-    </div>
-  </div>
-  <script src="terminal.js"></script>
-  <script>
-    const output = document.getElementById('output');
-const input = document.getElementById('command-input');
+<div id = one >
+    <p>div one</p>
+</div>    
 
-input.addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
-    const command = input.value.trim();
-    processCommand(command);
-    input.value = '';
-  }
-});
+<div id = two >
+    <p>div two</p> 
+</div>
 
-function processCommand(command) {
-  if (!command) return;
-
-  addLine(`> ${command}`);
-  switch(command.toLowerCase()) {
-    case 'help':
-      addLine('Available commands: help, clear, hello');
-      break;
-    case 'hello':
-      addLine('Hello, User!');
-      break;
-    case 'clear':
-      output.innerHTML = '';
-      break;
-    default:
-      addLine(`Command not found: ${command}`);
-  }
-}
-
-function addLine(text) {
-  output.innerHTML += text + '\n';
-  output.scrollTop = output.scrollHeight;
-}
-
-  </script>
+<div id = three>
+<p>div three</p>
+</div>
 </body>
 </html>
