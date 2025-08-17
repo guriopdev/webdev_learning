@@ -1,7 +1,5 @@
-.name{
-  color : blue;
-}
-
-#title{
-    color : red;
+#one{
+  padding: 32px;
+  border : 4px;
+  margin  : 32px;
 }
